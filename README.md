@@ -12,6 +12,8 @@ This project includes a devcontainer setup with following tools installed (lates
 - Go
 - TypeScript
 
+Please note that the image is pretty big given all the tools installed.
+
 ## How to use
 
 With the tools pre-installed you can experiment with different ways to generate Kubernetes YAML.
