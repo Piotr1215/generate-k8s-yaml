@@ -10,12 +10,12 @@ This project includes a devcontainer setup with following tools installed (lates
 - yq
 - cdk8s
 - naml
-- Go
+- <s>Go</s>
 - TypeScript
-- super-linter
 - vs code extensions
+- kubeval
 
-Please note that the image is relatively big (>2GB) given all the tools installed. Some of the tools/features are disabled in the .devcontainer file:
+Please note that the image is relatively big (>1.5 GB) given all the tools installed. Some of the tools/features are disabled in the .devcontainer file:
 - kubernetes
 - kubectl
 - helm
