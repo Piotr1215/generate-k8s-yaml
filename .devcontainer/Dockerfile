@@ -20,7 +20,10 @@ RUN wget https://github.com/mikefarah/yq/releases/download/v4.13.3/yq_linux_amd6
     curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.20.1 && \
     curl -sfL https://releases.dagger.io/dagger/install.sh | sh && \
     chmod +x ./bin/dagger && \
-    mv ./bin/dagger /usr/local/bin
+    mv ./bin/dagger /usr/local/bin && \
+    curl -L https://github.com/cue-lang/cue/releases/download/v0.4.0/cue_v0.4.0_linux_amd64.tar.gz -o cue && \
+    chmod +x cue && \
+    mv cue /usr/local/bin
 
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
