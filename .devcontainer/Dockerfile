@@ -17,8 +17,10 @@ RUN wget https://github.com/mikefarah/yq/releases/download/v4.13.3/yq_linux_amd6
     wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-linux-amd64.tar.gz && \
     tar xf kubeval-linux-amd64.tar.gz && \
     mv kubeval /usr/local/bin && \
-    curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.20.1
-
+    curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.20.1 && \
+    curl -sfL https://releases.dagger.io/dagger/install.sh | sh && \
+    chmod +x ./bin/dagger && \
+    mv ./bin/dagger /usr/local/bin
 
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
