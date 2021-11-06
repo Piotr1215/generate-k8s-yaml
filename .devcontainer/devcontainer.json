@@ -30,7 +30,8 @@
 		"redhat.vscode-yaml",
 		"lunuan.kubernetes-templates",
 		"vscode-icons-team.vscode-icons",
-		"nur.just-black"
+		"nur.just-black",
+		"zgm.cuesheet"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
