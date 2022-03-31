@@ -45,8 +45,8 @@
 	"remoteUser": "node",
 	"features": {
 		//"docker-in-docker": "latest",
-		"docker-from-docker": "latest",
-		//"kubectl-helm-minikube": "latest",
+		// "docker-from-docker": "latest",
+		"kubernetes-helm": "latest",
 		//"golang": "latest"
 	}
 }
